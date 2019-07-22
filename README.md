@@ -22,14 +22,19 @@ As an example, this JSON object describing 4 generations of a part of a family t
           "name": "Ares",
           "age": 50,
           "children": [
-            {"name": "Eros", "age": 25},
-            {"name": "Phobos", "age": 20}
+            {
+              "name": "Eros",
+              "age": 25
+            },
+            {
+              "name": "Phobos",
+              "age": 20
+            }
           ]
         },
         {
           "name": "Hebe",
-          "age": 45,
-          "children": []
+          "age": 45
         }
       ]
     }
@@ -50,7 +55,7 @@ would simply become:
 
 If you save the above to a file `family.txt` When you run `cat family.txt | jsonl-tree` it will expand the jsonl-tree representation into the actual JSON with the nested objects built together. The `// nest=children` comment tells the jsonl-tree compiler to use the field name `children` for nesting the objects.
 
-Note that the compiler also accepts the following syntax while will generate the same JSON. This is used to further compress the leading whitespace if necessary by using a leading int on each line specifying the nesting level:
+Note that the compiler also accepts the following syntax that will generate the same JSON. This is used to further compress the leading whitespace if necessary by using a leading int on each line specifying the nesting level:
 ```
 // nest=children
 0{"name": "Rheia", "age": 100}
@@ -63,7 +68,7 @@ Note that the compiler also accepts the following syntax while will generate the
 
 This is obviously not very human readable at all and is only intended to be used as an intermediate representation that is output by other software tools.
 
-Note that currently jsonl-tree only handles the nesting of object by way of a single field name.
+Note that currently jsonl-tree only handles the nesting of objects by way of a single field name.
 
 ## Installation
 
