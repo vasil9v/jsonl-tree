@@ -1,0 +1,30 @@
+{
+  "name": "Rheia",
+  "age": 100,
+  "children": [
+    {
+      "name": "Zeus",
+      "age": 70,
+      "children": [
+        {
+          "name": "Ares",
+          "age": 50,
+          "children": [
+            {
+              "name": "Eros",
+              "age": 25
+            },
+            {
+              "name": "Phobos",
+              "age": 20
+            }
+          ]
+        },
+        {
+          "name": "Hebe",
+          "age": 45
+        }
+      ]
+    }
+  ]
+}
