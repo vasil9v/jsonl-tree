@@ -1,3 +1,4 @@
+// nest=children
 0{"name": "Rheia", "age": 100}
 1{"name": "Zeus", "age": 70}
 2{"name": "Ares", "age": 50}

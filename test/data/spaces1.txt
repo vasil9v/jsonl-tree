@@ -1,3 +1,4 @@
+// nest=offspring
 {"name": "Rheia", "age": 100}
  {"name": "Zeus", "age": 70}
   {"name": "Ares", "age": 50}
