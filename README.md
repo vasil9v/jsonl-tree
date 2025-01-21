@@ -4,7 +4,7 @@ A simple way to encode nested tree structures of JSON objects.
 
 Similar to the way languages such as [YAML](https://yaml.org/) and Python indent for scope, [jsonl-tree](https://github.com/vasil9v/jsonl-tree) extends the [jsonl](http://jsonlines.org/) spec slightly to allow easy construction of trees of the individual JSON objects.
 
-Consider a JSON object that describes a `person` where you might have a field such as `"children": []` that nests recursively. It can get unwieldy to construct even a few levels of a tree of such objects and and unreadable to read when you try to actually nest the structures to conform to regular JSON.
+Consider a JSON object that describes a `person` where you might have a field such as `"children": []` that nests recursively. It can get unwieldy to construct even a few levels of a tree of such objects and difficult to read when you try to actually nest the structures to conform to regular JSON.
 
 With jsonl-tree you instead just use jsonl (newline separated JSON) but with the additional feature that there is leading whitespace indenting a child object.
 
